@@ -1,8 +1,6 @@
-from flask import Flask
-from flask_restful import Resource, Api
+from flask_restful import Resource
 
-app = Flask(__name__)
-api = Api(app)
+
 
 hoteis = [
     {
@@ -32,7 +30,3 @@ class Hoteis(Resource):
     def get(self):
         return{'hoteis': hoteis}
 
-api.add_resource(Hoteis, '/hoteis')
-
-if __name__ == '__main__':
-    app.run(debug=True)
