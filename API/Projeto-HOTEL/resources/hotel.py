@@ -28,5 +28,18 @@ hoteis = [
 
 class Hoteis(Resource):
     def get(self):
-        return{'hoteis': hoteis}
+        return{'hoteis': hoteis} 
+    
+class Hotel(Resource):
+    def get(self):
+        pass
+    
+    def post(self):
+        pass
+    
+    def put(self):
+        pass
+    
+    def delete(self):
+        pass 
 
