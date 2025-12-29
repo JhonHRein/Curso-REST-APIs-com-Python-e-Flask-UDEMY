@@ -32,7 +32,7 @@ class Hoteis(Resource):
     
 class Hotel(Resource):
     def get(self, hotel_id):
-        for hotel in Hoteis:
+        for hotel in hoteis:
             if hotel['hotel_id'] == hotel_id:
                 return hotel
         return {'Message': 'Hotel not found'}, 404 #not found
